@@ -13,11 +13,35 @@
         <header>
             <nav class="flex flex-col justify-center items-center mt-10 relative">
                 <div><img class="w-56" src="assets/bg.png" alt=""></div>
-                <div> <img class="absolute left-44 top-10" src="assets/Group.png" alt=""></div>
+                <div> <img class="absolute left-44 top-10 w-16" src="assets/Group.png" alt=""></div>
             </nav>
         </header>
-
-
+        <div>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-3xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">NUMBER</span>
+                    </label>
+                    <input value="12345678901"  id="account-number" type="number" placeholder="Type your number" class="input input-bordered rounded-full" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit Pin</span>
+                    </label>
+                    <input id="pin" type="password" placeholder="4 Digit Pin" class="input input-bordered rounded-full" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="login-btn" class="btn btn-primary rounded-full">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
     </section>
     
    <!-- java script connection -->
