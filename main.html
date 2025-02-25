@@ -30,13 +30,13 @@
         <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         <div class="cards grid grid-cols-3 mt-4 gap-2">
             <!-- 1 -->
-            <div class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div id="add-money-box" class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/wallet1.png" alt="">
                 <p>Add Money</p>
 
             </div>
             <!-- 2 -->
-            <div class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div id="cash-out" class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/send1.png" alt="">
                 <p>Cash Out</p>
 
@@ -67,7 +67,7 @@
              </div>
             </section>
             <!-- add money -->
-            <section>
+            <section id="add-money">
                 <h2 class="pl-10 pt-6 font-bold text-xl"> Add Money</h2>
                 <div>
                     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -112,7 +112,48 @@
                   </div>
             </section>
             <!--  -->
+            <!-- cashout section -->
+             <section id="cashout">
+              <h2 class="pl-10 pt-6 font-bold text-xl"> Cash Out</h2>
+              <div>
+                  <div class="hero-content flex-col lg:flex-row-reverse">
+                    
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    
+                      <form class="card-body">
+                          <legend>Select Bank</legend>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Bank Account Number</span>
+                          </label>
+                          <input type="number" placeholder="Enter 11 digit number" class="input input-bordered rounded-full" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Amount to Cash Out</span>
+                          </label>
+                          <input id="cash-out-amount" type="number" placeholder="Add Amount to withdraw" class="input input-bordered rounded-full" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Pin Number</span>
+                          </label>
+                          <input id="cash-out-pin" type="password" placeholder="enter 4 digit pin" class="input input-bordered rounded-full" required />
+                          <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                          </label>
+                        </div>
+                        <div class="form-control mt-6">
+                          <button id="cash-out-btn" class="btn btn-primary rounded-full">Cash Out</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+             </section>
    </section>
    <script src="script/addMoney.js"></script>
+   <script src="script/toggle.js"></script>
+   <script src="script/cashout.js"></script>
 </body>
 </html>
