@@ -60,7 +60,7 @@
 
             </div>
             <!-- 6 -->
-            <div class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div id="transection-box" class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/send1.png" alt="">
                 <p>Transactions</p>
             </div>
@@ -86,7 +86,7 @@
                             <label class="label">
                               <span class="label-text">Bank Account Number</span>
                             </label>
-                            <input type="number" placeholder="Enter 11 digit number" class="input input-bordered rounded-full" required />
+                            <input id="account-number" type="number" placeholder="Enter 11 digit number" class="input input-bordered rounded-full" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
@@ -151,6 +151,13 @@
                   </div>
                 </div>
              </section>
+             <!-- transection History -->
+              <section id="transection-history">
+                <h1 class="text-3xl font-bold ml-6 mt-6 text-center text-red-400">Transection History</h1>
+                <div id="transection-container">
+
+                </div>
+              </section>
    </section>
    <script src="script/addMoney.js"></script>
    <script src="script/toggle.js"></script>
