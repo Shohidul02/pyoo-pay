@@ -16,7 +16,7 @@ document.getElementById("add-money-btn").addEventListener('click',
             const transectionNumber = document.getElementById("account-number").value;
             const p=document.createElement("p");
             p.innerText = `
-        Added ${convertedAmount} from ${transectionNumber} this account
+        Added ${convertedAmount} from ${transectionNumber} this account.
             `
             transectionContainer.appendChild(p);
             // transection history

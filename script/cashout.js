@@ -10,6 +10,16 @@ document.getElementById("cash-out-btn").addEventListener('click',
         if(convertedPin===1234){
             const sum =convertedMainBalance-convertedCashoutAmount;
             document.getElementById("main-balance").innerText =sum;
+
+            //// transection history
+            const transectionContainer=document.getElementById("transection-container");
+            const transectionNumber = document.getElementById("cashout-numbr").value;
+            const p=document.createElement("p");
+            p.innerText = `
+        Cash out ${convertedCashoutAmount} from ${transectionNumber} this account.
+            `
+            transectionContainer.appendChild(p);
+            // transection history
         }
         else{
             alert("Wrong Pin")
