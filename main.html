@@ -21,7 +21,7 @@
                     <p>Abailable Blance</p>
                 </div>
             </div>
-            <button class="btn"> <i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
+            <button  id="logout-btn" class="btn"> <i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
         </nav>
         <hr class=" border-gray-500 my-4">
     </header>
@@ -30,37 +30,37 @@
         <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         <div class="cards grid grid-cols-3 mt-4 gap-2">
             <!-- 1 -->
-            <div id="add-money-box" class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div id="add-money-box" class="box border cursor-pointer border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/wallet1.png" alt="">
                 <p>Add Money</p>
 
             </div>
             <!-- 2 -->
-            <div id="cash-out" class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div id="cash-out" class="box border cursor-pointer border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/send1.png" alt="">
                 <p>Cash Out</p>
 
             </div>
             <!-- 3 -->
-            <div class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div class="box border cursor-pointer border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/send1.png" alt="">
                 <p>Transfer Money</p>
 
             </div>
             <!-- 4 -->
-            <div class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div class="box border cursor-pointer border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/wallet1.png" alt="">
                 <p>Get Bonus</p>
 
             </div>
             <!-- 5 -->
-            <div class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div class="box border cursor-pointer border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/send1.png" alt="">
                 <p>Pay Bill</p>
 
             </div>
             <!-- 6 -->
-            <div id="transection-box" class="box border border-gray-400 text-center px-2 py-6 rounded-lg">
+            <div id="transection-box" class="box border cursor-pointer border-gray-400 text-center px-2 py-6 rounded-lg">
                 <img class="mx-auto" src="assets/send1.png" alt="">
                 <p>Transactions</p>
             </div>
@@ -68,13 +68,14 @@
             </section>
             <!-- add money -->
             <section id="add-money">
-                <h2 class="pl-10 pt-6 font-bold text-xl"> Add Money</h2>
+                
                 <div>
                     <div class="hero-content flex-col lg:flex-row-reverse">
                       
                       <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                       
                         <form class="card-body">
+                           <h2 class="font-bold text-xl text-center"> Add Money</h2>
                             <legend>Select Bank</legend>
                             <select class="select select-bordered w-full rounded-full max-w-xs">
                                 <option disabled selected>Select Bank</option>
@@ -162,5 +163,6 @@
    <script src="script/addMoney.js"></script>
    <script src="script/toggle.js"></script>
    <script src="script/cashout.js"></script>
+   <script src="script/logout.js"></script>
 </body>
 </html>
